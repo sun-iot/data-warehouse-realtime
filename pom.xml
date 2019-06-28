@@ -14,15 +14,9 @@
         <module>data-warehouse-rt</module>
         <module>data-warehouse-logger</module>
         <module>data-warehouse-publish</module>
+        <module>data-warehouse-canal</module>
     </modules>
-    <!--
-    <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.1.6.RELEASE</version>
-        <relativePath/>
-    </parent>
-    -->
+
     <properties>
         <spark.version>2.1.1</spark.version>
         <scala.version>2.11.8</scala.version>
