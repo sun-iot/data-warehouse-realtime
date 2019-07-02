@@ -10,4 +10,6 @@ package com.sun.bigdata.warehouse.common.constant;
 public class GmallConstants {
     public static final String KAFKA_TOPIC_STARTUP="gmall_start";
     public static final String KAFKA_TOPIC_EVENT="gmall_event";
+    public static final String KAFKA_TOPIC_ORDER="gmall_order";
+    public static final String KAFKA_TOPIC_USER="gmall_user";
 }

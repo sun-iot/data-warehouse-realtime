@@ -15,6 +15,10 @@ import java.util.Properties;
 public class MyKafkaSender {
     public static KafkaProducer<String , String> kafkaProducer = null ;
 
+    /**
+     * Kafka的producer
+     * @return
+     */
     public static KafkaProducer<String,String> createKafkaProducer(){
         Properties properties = new Properties();
         properties.put("bootstrap.servers", "hadoop104:9092,hadoop105:9092,hadoop106:9092");
@@ -30,6 +34,11 @@ public class MyKafkaSender {
         return producer ;
     }
 
+    /**
+     * 发送到Kafka
+     * @param topic
+     * @param msg
+     */
     public static void send(String topic, String msg){
         if (kafkaProducer == null){
             kafkaProducer = createKafkaProducer();
